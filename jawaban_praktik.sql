@@ -86,7 +86,7 @@ JAWABAN:
     -- => Hal yang akan terjadi adalah data dengan value jumlah_barang kurang dari 10 akan terhapus
 
 -- 9.  Hitung total nilai jumlah (harga * jumlah):
-    => SELECT SUM(harga_barang*jumlah_barang) as nilai FROM products ORDER BY id;
+    => SELECT SUM(harga_barang*jumlah_barang) as nilai FROM products GROUP BY id;
 
 -- 10. Tambah kolom baru 'diskon' dengan tipe data DECIMAL(5.2):
     => ALTER TABLE
